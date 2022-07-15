@@ -1,0 +1,37 @@
+{
+	"info": {
+		"_postman_id": "fff10903-490e-4165-8adc-ee608496ed87",
+		"name": "kafka",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:5000/kafka/pushToConsumers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"status\": \"change\",\r\n    \"somemessage\": \"124\",\r\n    \"someothermessage\": \"789456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/kafka/pushToConsumers",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"kafka",
+						"pushToConsumers"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
